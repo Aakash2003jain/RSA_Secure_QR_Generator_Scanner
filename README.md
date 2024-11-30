@@ -46,9 +46,10 @@ The RSA algorithm is a widely-used asymmetric encryption method that offers a hi
 HTML5, CSS3, and JavaScript for creating the user interface and interaction.
 
 #### Libraries & Tools:
-Font Awesome for icons.
-jsQR for QR code scanning functionality.
-Forge.js for implementing RSA encryption and decryption.
+1. Font Awesome for icons.
+2. jsQR for QR code scanning functionality.
+3. Forge.js for implementing RSA encryption and decryption.
+   
 
 #### Security:
 RSA Encryption and Decryption using Forge.js.
@@ -57,7 +58,7 @@ RSA Encryption and Decryption using Forge.js.
 To get started with the RSA-Secure-QR-Generator-Scanner, follow these steps:
 1. **Clone the Repository:**
  ```bash
-       git clone https://github.com/Aakash2003jain/RSA-Secure-QR-Generator-Scanner.git 
+       git clone https://github.com/Aakash2003jain/RSA_Secure_QR_Generator_Scanner.git 
  ```
 
 2. **Navigate to the Project Directory:**
