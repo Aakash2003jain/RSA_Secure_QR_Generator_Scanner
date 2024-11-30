@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator & Scanner</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/generator.css">
+    <link rel="stylesheet" href="css/scanner.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.10.0/forge.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsqr"></script>
+    <style>
+        .info-section {
+            margin: 20px 0;
+        }
+
+        .info-item {
+            border: 1px solid #000080;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .info-item h2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .info-item p,
+        .info-item ul {
+            margin: 10px 0 0;
+            display: none;
+        }
+
+        .info-item ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .info-item ul li {
+            margin-bottom: 5px;
+        }
+
+        .info-item.active p,
+        .info-item.active ul {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <button class="nav-gene active" style="color:#000080 ;">Generator</button>
+            <button class="nav-scan" style="color: #000080;">Scanner</button>
+        </nav>
+
+        <!-- QR Code Generator -->
+        <div class="generator">
+            <h1 style="color: #000080;">QR Code Generator - Create QR Codes for Free</h1>
+            <p>Paste a Text or URL to create a QR code</p>
+            <div class="generator-form">
+                <input type="text" id="generator-input" placeholder="Enter a Text or URL">
+                <button id="generate-btn">Generate</button>
+            </div>
+            <div class="generator-img">
+                <img id="qr-code-img" src="./images/qr-code.png" alt="QR Code">
+            </div>
+            <div class="generator-btn">
+                <button id="download-btn" class="btn-link">Download <i class="fa-solid fa-download"></i></button>
+            </div>
+        </div>
+
+        <!-- QR Code Scanner -->
+        <div class="scanner" style="display: none;">
+            <h1 style="color: #000080;">QR Code Scanner</h1>
+            <form class="scanner-form">
+                <input type="file" accept="image/*" id="scanner-input" hidden>
+                <img src="images/qr-code.png" alt="QR Code Image" id="upload-icon">
+                <div class="content" id="upload-content">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <p>Upload QR Code Image</p>
+                </div>
+            </form>
+            <div class="scanner-details">
+                <textarea class="textarea" id="decoded-text"></textarea>
+                <div class="btn">
+                    <button class="close">Close</button>
+                    <button class="copy">Copy</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info Sections -->
+        <div class="info-section">
+            <!-- What is QR Code Section -->
+            <div class="info-item">
+                <h2>What is QR Code? <i class="fa-solid fa-chevron-down"></i></h2>
+                <p>A QR code (Quick Response code) is a type of matrix barcode that can store data in two dimensions. It is widely used for encoding information such as URLs, text, and contact details for quick access using a QR code scanner or smartphone camera.</p>
+            </div>
+
+            <!-- Why Use QR Codes Section -->
+            <div class="info-item">
+                <h2>Why Use QR Codes? <i class="fa-solid fa-chevron-down"></i></h2>
+                <p>QR codes are versatile and allow users to quickly access information or perform actions like visiting a website, saving contact information, or making payments. They are highly efficient in bridging the gap between offline and online experiences.</p>
+            </div>
+
+            <!-- Benefits of QR Codes Section -->
+            <div class="info-item">
+                <h2>Benefits of QR Codes <i class="fa-solid fa-chevron-down"></i></h2>
+                <ul>
+                    <li>Fast and easy to use with smartphones.</li>
+                    <li>Can store a large amount of data in a compact format.</li>
+                    <li>Highly customizable and suitable for branding purposes.</li>
+                    <li>Promotes contactless interactions, making them ideal for digital payments and sharing information.</li>
+                    <li>Improves user engagement and drives traffic to online resources.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer style="color: #000080;">
+            <h4>QR Code Generator & Scanner</h4>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/rsa_generator.js"></script>
+    <script src="js/rsa_scanner.js"></script>
+    <script>
+        document.querySelectorAll('.info-item').forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
