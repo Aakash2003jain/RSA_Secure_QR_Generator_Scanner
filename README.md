@@ -63,7 +63,7 @@ To get started with the RSA-Secure-QR-Generator-Scanner, follow these steps:
 
 2. **Navigate to the Project Directory:**
 ```bash
-   cd RSA-Secure-QR-Generator-Scanner
+   cd RSA_Secure_QR_Generator_Scanner
 ```
 
 3. **Open the HTML File:**
