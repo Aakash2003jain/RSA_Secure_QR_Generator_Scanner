@@ -7,8 +7,8 @@ RSA_Secure_QR_Generator_Scanner is a web-based application that combines QR code
 ## Table of Contents
 - [Introduction](#Introduction)
 - [Features](#Features)
-- [Why RSA](#WhyRSA?)
-- [Technologies Used](#TechnologiesUsed)
+- [Why RSA](#Why-rsa)
+- [Technologies Used](#Technologies-Used)
 - [Installation](#Installation)
 - [Usage](#Usage)
 
