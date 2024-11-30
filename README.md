@@ -70,7 +70,7 @@ Optionally, download the QR code by clicking the "Download" button.
 Use the file upload or camera feature to scan a QR code.
 The encrypted data will be decrypted and displayed in the text area.
 
-
+##
 Feel free to reach out with any issues or suggestions. Happy coding! 🚀
 
 
