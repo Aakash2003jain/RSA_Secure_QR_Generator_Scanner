@@ -2,29 +2,28 @@
 
 ![Demo GIF](demo.gif)
 
-## Description
-
 RSA_Secure_QR_Generator_Scanner is a web-based application that combines QR code generation and scanning capabilities with RSA encryption for enhanced security. This project allows users to create QR codes containing encrypted data and scan QR codes to securely retrieve and decrypt their contents.
 
 ## Table of Contents
-
-- [Demo](#demo)
+- [Introduction](#Introduction)
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
+- [Why RSA](#usage)
 - [Contributing](#contributing)
 - [License](#license)
 
-## Demo
+## Introduction
+The RSA-Secure-QR-Generator-Scanner application combines the convenience of QR codes with the security of RSA encryption. Users can securely encode text, URLs, or other data into QR codes, ensuring that the content is encrypted. Additionally, users can scan and decrypt QR codes to retrieve the secure information.
 
-You can access the live demo of the QR Code Generator [here](https://kaushaldhrangad.github.io/qr-code-generator/).
+This project is ideal for applications requiring secure data transmission via QR codes, such as secure information sharing, payment systems, and confidential messaging.
 
 ## Features
+#### QR Code Generator:
+-Generate QR codes from any text, URL, or data input.
+-Automatically encrypts the input using RSA encryption before generating the QR code.
 
-- Generate QR codes from plain text, URLs, or any data.
-- Real-time QR code generation as you type.
-- You can download it on your local machine.
-- Simple and user-friendly interface.
+
+
 
 ## Installation
 
@@ -44,15 +43,9 @@ cd qr-code-generator
 
 3. Open `index.html` in your web browser.
 
-## Usage
+## Why RSA?
 
-1. Open the QR Code Generator in your web browser by accessing the [live demo](https://kaushaldhrangad.github.io/qr-code-generator/) or hosting it locally as described in the Installation section.
-
-2. Enter the data for which you want to generate a QR code in the input field.
-
-3. The QR code will be generated in real-time below the input field.
-
-4. Click the download button below the generated QR code image to save it to your local machine.
+RSA encryption ensures that sensitive information encoded in QR codes remains secure, making the application ideal for use cases like secure data sharing, payment systems, and personal data protection.
 
 ## Contributing
 
