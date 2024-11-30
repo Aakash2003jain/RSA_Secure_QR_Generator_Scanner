@@ -66,8 +66,8 @@ To get started with the RSA-Secure-QR-Generator-Scanner, follow these steps:
 ```
 
 3. **Open the HTML File:**
-Open index.html in your preferred web browser to start using the application.
-Alternatively, you can set up a local server (e.g., using Live Server extension in Visual Studio Code) to serve the app.
+-Open index.html in your preferred web browser to start using the application.
+-Alternatively, you can set up a local server (e.g., using Live Server extension in Visual Studio Code) to serve the app.
 
 ## Usage 
 
