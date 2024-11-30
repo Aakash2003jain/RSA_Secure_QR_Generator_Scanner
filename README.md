@@ -1,6 +1,6 @@
 # RSA_Secure_QR_Generator_Scanner
 
-![QR Code Generator Demo](./demo.gif)
+![Demo GIF](demo.gif)
 
 ## Description
 
