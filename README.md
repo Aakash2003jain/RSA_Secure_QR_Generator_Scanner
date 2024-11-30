@@ -57,7 +57,8 @@ RSA Encryption and Decryption using Forge.js.
 To get started with the RSA-Secure-QR-Generator-Scanner, follow these steps:
 1. **Clone the Repository:**
    ```bash
- git clone https://github.com/yourusername/RSA-Secure-QR-Generator-Scanner.git```
+ git clone https://github.com/yourusername/RSA-Secure-QR-Generator-Scanner.git 
+ ```
 
 2. **Navigate to the Project Directory:**
 ```bash
