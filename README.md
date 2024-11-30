@@ -13,7 +13,7 @@ RSA_Secure_QR_Generator_Scanner is a web-based application that combines QR code
 - [Usage](#Usage)
 
 ## Introduction
-The RSA-Secure-QR-Generator-Scanner application combines the convenience of QR codes with the security of RSA encryption. Users can securely encode text, URLs, or other data into QR codes, ensuring that the content is encrypted. Additionally, users can scan and decrypt QR codes to retrieve the secure information.
+The RSA-Secure-QR-Generator-Scanner application combines the convenience of QR codes with the security of RSA encryption. Users can securely encode text, URLs, or other data into QR codes, ensuring that the content is encrypted. Additionally, users can upload QR codes and decrypt QR codes to retrieve the secure information.
 
 This project is ideal for applications requiring secure data transmission via QR codes, such as secure information sharing, payment systems, and confidential messaging.
 
@@ -24,7 +24,7 @@ Generate QR codes from any text, URL, or data input.Automatically encrypts the i
 
 #### QR Code Scanner:
 
-Scan QR codes using the camera or upload QR code images.
+Scan QR codes using the upload QR code images.
 Decrypt the content of the QR code securely using RSA decryption.
 
 #### RSA Encryption:
