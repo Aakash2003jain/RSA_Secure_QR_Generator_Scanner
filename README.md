@@ -6,11 +6,11 @@ RSA_Secure_QR_Generator_Scanner is a web-based application that combines QR code
 
 ## Table of Contents
 - [Introduction](#Introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Why RSA](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Features](#Features)
+- [Why RSA](#WhyRSA?)
+- [Technologies Used](#TechnologiesUsed)
+- [Installation](#Installation)
+- [Usage](#Usage)
 
 ## Introduction
 The RSA-Secure-QR-Generator-Scanner application combines the convenience of QR codes with the security of RSA encryption. Users can securely encode text, URLs, or other data into QR codes, ensuring that the content is encrypted. Additionally, users can scan and decrypt QR codes to retrieve the secure information.
@@ -19,48 +19,58 @@ This project is ideal for applications requiring secure data transmission via QR
 
 ## Features
 #### QR Code Generator:
--Generate QR codes from any text, URL, or data input.
--Automatically encrypts the input using RSA encryption before generating the QR code.
 
+Generate QR codes from any text, URL, or data input.Automatically encrypts the input using RSA encryption before generating the QR code.
 
+#### QR Code Scanner:
 
+Scan QR codes using the camera or upload QR code images.
+Decrypt the content of the QR code securely using RSA decryption.
 
-## Installation
+#### RSA Encryption:
+RSA algorithm ensures that the data encoded in the QR codes is secure and can only be decrypted by authorized recipients.
 
-As the QR Code Generator is a client-side application, you can use it directly without any installation. However, if you want to host it locally, follow these steps:
+#### User-Friendly Interface:
 
-1. Clone this repository to your local machine:
-
-```bash
-git clone https://github.com/kaushaldhrangad/qr-code-generator.git
-```
-
-2. Navigate to the project directory:
-
-```bash
-cd qr-code-generator
-```
-
-3. Open `index.html` in your web browser.
+Seamless navigation between the QR code generator and scanner features.
+Responsive design for ease of use across different devices.
 
 ## Why RSA?
 
-RSA encryption ensures that sensitive information encoded in QR codes remains secure, making the application ideal for use cases like secure data sharing, payment systems, and personal data protection.
+The RSA algorithm is a widely-used asymmetric encryption method that offers a high level of security. It involves a pair of public and private keys—data encrypted with the public key can only be decrypted with the corresponding private key. By using RSA encryption, this project ensures that the information embedded in the QR code is protected from unauthorized access, making it ideal for use cases where confidentiality is crucial.
 
-## Contributing
+## Technologies Used
 
-Contributions to the QR Code Generator project are welcome! If you find any issues or have suggestions for improvement, please feel free to open an issue or create a pull request on the [GitHub repository](https://github.com/kaushaldhrangad/qr-code-generator).
+#### Frontend:
 
-## License
+HTML5, CSS3, and JavaScript for creating the user interface and interaction.
+
+#### Libraries & Tools:
+Font Awesome for icons.
+jsQR for QR code scanning functionality.
+Forge.js for implementing RSA encryption and decryption.
+
+#### Security:
+RSA Encryption and Decryption using Forge.js.
+
+## Installation
 
 This project is open-source and available under the [MIT License](https://github.com/kaushaldhrangad/qr-code-generator/blob/master/LICENSE).
 
- ## Feature - Under Development
+ ## Usage 
 
-I am pleased to announce that we are currently working on an innovative and powerful scanner feature for our website! This feature will enable users to easily scan QR codes directly from their device's camera or upload a file. I am working hard to ensure a smooth and user-friendly scanning experience.
+#### Generate QR Code:
 
----
-Enjoy using the QR Code Generator! If you have any questions or need further assistance, feel free to reach out to the project's author or the community. Happy QR code generating!
+Enter a URL, text, or any data in the input box in the generator section.
+Click on "Generate" to create a QR code that contains the encrypted data.
+Optionally, download the QR code by clicking the "Download" button.
 
-## 🔗 Links
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kaushaldhrangad/)
+#### Scan QR Code:
+
+Use the file upload or camera feature to scan a QR code.
+The encrypted data will be decrypted and displayed in the text area.
+
+
+Feel free to reach out with any issues or suggestions. Happy coding! 🚀
+
+
