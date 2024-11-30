@@ -54,10 +54,21 @@ Forge.js for implementing RSA encryption and decryption.
 RSA Encryption and Decryption using Forge.js.
 
 ## Installation
+To get started with the RSA-Secure-QR-Generator-Scanner, follow these steps:
+1. **Clone the Repository:**
+   ```bash
+ git clone https://github.com/yourusername/RSA-Secure-QR-Generator-Scanner.git```
 
-This project is open-source and available under the [MIT License](https://github.com/kaushaldhrangad/qr-code-generator/blob/master/LICENSE).
+2. **Navigate to the Project Directory:**
+```bash
+cd RSA-Secure-QR-Generator-Scanner
+```
 
- ## Usage 
+3. **Open the HTML File:**
+Open index.html in your preferred web browser to start using the application.
+Alternatively, you can set up a local server (e.g., using Live Server extension in Visual Studio Code) to serve the app.
+
+## Usage 
 
 #### Generate QR Code:
 
@@ -67,7 +78,7 @@ Optionally, download the QR code by clicking the "Download" button.
 
 #### Scan QR Code:
 
-Use the file upload or camera feature to scan a QR code.
+Use the file upload feature to scan a QR code.
 The encrypted data will be decrypted and displayed in the text area.
 
 ##
