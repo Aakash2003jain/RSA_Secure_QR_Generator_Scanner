@@ -1,10 +1,10 @@
-# QR Code Generator
+# RSA_Secure_QR_Generator_Scanner
 
-![QR Code Generator Demo](./demo.gif)
+![Demo GIF](demo.gif)
 
 ## Description
 
-QR Code Generator is a simple web application that allows you to generate QR codes from text, URLs, or any other data easily. This project is built using HTML, CSS, and JavaScript, and it can be used directly in your web browser without the need for any server-side setup.
+RSA_Secure_QR_Generator_Scanner is a web-based application that combines QR code generation and scanning capabilities with RSA encryption for enhanced security. This project allows users to create QR codes containing encrypted data and scan QR codes to securely retrieve and decrypt their contents.
 
 ## Table of Contents
 
