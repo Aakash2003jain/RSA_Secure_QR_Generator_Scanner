@@ -84,4 +84,6 @@ RSA_Secure_QR_Generator_Scanner is a web-based application that combines QR code
    Use the file upload feature to scan a QR code.
    The encrypted data will be decrypted and displayed in the text area.
 
+## License
+   This project is licensed under the MIT License. See the LICENSE file for more details.
 
